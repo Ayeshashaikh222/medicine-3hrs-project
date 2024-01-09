@@ -1,6 +1,11 @@
+import { useContext } from "react";
+import { Table, Button, Container } from "react-bootstrap";
+import CartContext from "../Store/CartContext";
 
 const MedicineList = (props) => {
   const { medicines } = props;
+
+  const cartCtx = useContext(CartContext);
   
   return (
     <Container className="mx-auto my-4">

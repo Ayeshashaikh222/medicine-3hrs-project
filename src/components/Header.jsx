@@ -42,7 +42,7 @@ const Header = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {cartCtx.map((item) => (
+                            {cartCtx.items.map((item) => (
                                 <tr key={item.name}>
                                     <td>{item.name}</td>
                                     <td>{item.price}</td>
